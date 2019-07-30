@@ -19,11 +19,12 @@ import com.letit0or1.kawa.delpost.arukraine.SnackbarHelper
 import com.letit0or1.kawa.delpost.arukraine.data.MapImage
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.getViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
 import java.io.IOException
 
 class ARUkraineFragment : ArFragment() {
 
-    val viewModel: ARFragmentViewModel = getViewModel()
+    val viewModel: ARFragmentViewModel by viewModel()
 
     val imagesList: List<MapImage> by inject<List<MapImage>>()
 
@@ -63,6 +64,8 @@ class ARUkraineFragment : ArFragment() {
 
     override fun getSessionConfiguration(session: Session): Config {
         val config = super.getSessionConfiguration(session)
+        config.focusMode = Config.FocusMode.AUTO
+
         if (!setupAugmentedImageDatabase(config, session)) {
             SnackbarHelper.getInstance()
                 .showError(activity, "Could not setup augmented image database")
