@@ -57,11 +57,17 @@ class AugmentedImageNode(val context: Context, val transformationSystem: Transfo
                 oblastItem.localScale.y * SCALE_VECTOR.y,
                 oblastItem.localScale.z * SCALE_VECTOR.z
             )
-            oblNode.localPosition = Vector3.add(oblastItem.localPosition, SHIFT_VECTOR)
+
+            val locationVector = Vector3.add(oblastItem.localPosition, SHIFT_VECTOR)
+            oblNode.localPosition = Vector3(
+                locationVector.x * SCALE_VECTOR.x,
+                locationVector.y * SCALE_VECTOR.y,
+                locationVector.z * SCALE_VECTOR.z
+            )
+
             oblNode.renderable = it.getNow(null)
             oblNode.setParent(this)
             oblNode.setOnTapListener { hitTestRes, motionEvent ->
-                //                oblNode.select()
                 onClickListener(hitTestRes, motionEvent, oblNode, oblastItem)
             }
         }
@@ -69,7 +75,7 @@ class AugmentedImageNode(val context: Context, val transformationSystem: Transfo
 
     companion object {
         var SHIFT_VECTOR = Vector3(0.012f, 0f, 0f)
-        var SCALE_VECTOR = Vector3(1f, 1f, 1f)
+        var SCALE_VECTOR = Vector3(0.9f, 1f, 0.9f)
         const val TAG: String = "AugmentedImageNode"
         //resize to fit image
     }
