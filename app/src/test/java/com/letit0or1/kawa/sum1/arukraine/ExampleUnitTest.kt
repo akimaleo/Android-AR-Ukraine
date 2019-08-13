@@ -1,4 +1,4 @@
-package com.letit0or1.kawa.delpost.arukraine
+package com.letit0or1.kawa.sum1.arukraine
 
 import org.junit.Test
 

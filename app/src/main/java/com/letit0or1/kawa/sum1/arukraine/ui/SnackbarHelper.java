@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.letit0or1.kawa.delpost.arukraine;
+package com.letit0or1.kawa.sum1.arukraine.ui;
 
 import android.app.Activity;
 import android.view.View;

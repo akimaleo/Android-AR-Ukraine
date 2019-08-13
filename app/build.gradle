@@ -12,7 +12,7 @@ android {
     }
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.letit0or1.kawa.delpost.arukraine"
+        applicationId "com.letit0or1.kawa.sum1.arukraine"
         minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
@@ -73,7 +73,132 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
 }
 
-sceneform.asset('sampledata/map3d.fbx',
+//sceneform.asset('sampledata/map3d.fbx',
+//        'default',
+//        'sampledata/map3d.sfa',
+//        'src/main/res/raw/map3d')
+
+sceneform.asset('sampledata/cherkasy.fbx',
         'default',
-        'sampledata/map3d.sfa',
-        'src/main/res/raw/map3d')
+        'sampledata/sfa/cherkasy.sfa',
+        'src/main/res/raw/cherkasy')
+
+sceneform.asset('sampledata/chernihiv.fbx',
+        'default',
+        'sampledata/sfa/chernihiv.sfa',
+        'src/main/res/raw/chernihiv')
+
+sceneform.asset('sampledata/chernivtsi.fbx',
+        'default',
+        'sampledata/sfa/chernivtsi.sfa',
+        'src/main/res/raw/chernivtsi')
+
+sceneform.asset('sampledata/crimea.fbx',
+        'default',
+        'sampledata/sfa/crimea.sfa',
+        'src/main/res/raw/crimea')
+//
+sceneform.asset('sampledata/dnipropetrovsk.fbx',
+        'default',
+        'sampledata/sfa/dnipropetrovsk.sfa',
+        'src/main/res/raw/dnipropetrovsk')
+
+sceneform.asset('sampledata/donetsk.fbx',
+        'default',
+        'sampledata/sfa/donetsk.sfa',
+        'src/main/res/raw/donetsk')
+
+sceneform.asset('sampledata/ivanofrankivsk.fbx',
+        'default',
+        'sampledata/sfa/ivanofrankivsk.sfa',
+        'src/main/res/raw/ivanofrankivsk')
+
+sceneform.asset('sampledata/kharkiv.fbx',
+        'default',
+        'sampledata/sfa/kharkiv.sfa',
+        'src/main/res/raw/kharkiv')
+
+sceneform.asset('sampledata/kherson.fbx',
+        'default',
+        'sampledata/sfa/kherson.sfa',
+        'src/main/res/raw/kherson')
+
+sceneform.asset('sampledata/khmelnitskyi.fbx',
+        'default',
+        'sampledata/sfa/khmelnitskyi.sfa',
+        'src/main/res/raw/khmelnitskyi')
+
+sceneform.asset('sampledata/kirovograd.fbx',
+        'default',
+        'sampledata/sfa/kirovograd.sfa',
+        'src/main/res/raw/kirovograd')
+
+sceneform.asset('sampledata/kyiv.fbx',
+        'default',
+        'sampledata/sfa/kyiv.sfa',
+        'src/main/res/raw/kyiv')
+
+sceneform.asset('sampledata/luhansk.fbx',
+        'default',
+        'sampledata/sfa/luhansk.sfa',
+        'src/main/res/raw/luhansk')
+
+sceneform.asset('sampledata/lviv.fbx',
+        'default',
+        'sampledata/sfa/lviv.sfa',
+        'src/main/res/raw/lviv')
+
+sceneform.asset('sampledata/mykolaiv.fbx',
+        'default',
+        'sampledata/sfa/mykolaiv.sfa',
+        'src/main/res/raw/mykolaiv')
+
+sceneform.asset('sampledata/odessa.fbx',
+        'default',
+        'sampledata/sfa/odessa.sfa',
+        'src/main/res/raw/odessa')
+
+sceneform.asset('sampledata/poltava.fbx',
+        'default',
+        'sampledata/sfa/poltava.sfa',
+        'src/main/res/raw/poltava')
+
+sceneform.asset('sampledata/rivne.fbx',
+        'default',
+        'sampledata/sfa/rivne.sfa',
+        'src/main/res/raw/rivne')
+
+sceneform.asset('sampledata/sumy.fbx',
+        'default',
+        'sampledata/sfa/sumy.sfa',
+        'src/main/res/raw/sumy')
+
+sceneform.asset('sampledata/ternopil.fbx',
+        'default',
+        'sampledata/sfa/ternopil.sfa',
+        'src/main/res/raw/ternopil')
+
+sceneform.asset('sampledata/vinnytsia.fbx',
+        'default',
+        'sampledata/sfa/vinnytsia.sfa',
+        'src/main/res/raw/vinnytsia')
+
+sceneform.asset('sampledata/volyn.fbx',
+        'default',
+        'sampledata/sfa/volyn.sfa',
+        'src/main/res/raw/volyn')
+
+sceneform.asset('sampledata/zakarpatia.fbx',
+        'default',
+        'sampledata/sfa/zakarpatia.sfa',
+        'src/main/res/raw/zakarpatia')
+
+sceneform.asset('sampledata/zaporizhia.fbx',
+        'default',
+        'sampledata/sfa/zaporizhia.sfa',
+        'src/main/res/raw/zaporizhia')
+
+sceneform.asset('sampledata/zhytomyr.fbx',
+        'default',
+        'sampledata/sfa/zhytomyr.sfa',
+        'src/main/res/raw/zhytomyr')

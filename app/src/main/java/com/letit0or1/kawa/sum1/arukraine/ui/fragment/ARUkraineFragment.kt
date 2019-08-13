@@ -1,4 +1,4 @@
-package com.letit0or1.kawa.delpost.arukraine.fragment
+package com.letit0or1.kawa.sum1.arukraine.ui.fragment
 
 import android.app.ActivityManager
 import android.content.Context
@@ -15,10 +15,9 @@ import com.google.ar.core.AugmentedImageDatabase
 import com.google.ar.core.Config
 import com.google.ar.core.Session
 import com.google.ar.sceneform.ux.ArFragment
-import com.letit0or1.kawa.delpost.arukraine.SnackbarHelper
-import com.letit0or1.kawa.delpost.arukraine.data.MapImage
+import com.letit0or1.kawa.sum1.arukraine.ui.SnackbarHelper
+import com.letit0or1.kawa.sum1.arukraine.data.MapImage
 import org.koin.android.ext.android.inject
-import org.koin.android.viewmodel.ext.android.getViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 import java.io.IOException
 
@@ -82,7 +81,11 @@ class ARUkraineFragment : ArFragment() {
         val augmentedImageDatabase = AugmentedImageDatabase(session)
         imagesList.forEach {
             val augmentedImageBitmap = loadImageBitmap(assetManager, it.fileName) ?: return false
-            augmentedImageDatabase.addImage(it.fileName, augmentedImageBitmap)
+
+            if (it.width == 0f)
+                augmentedImageDatabase.addImage(it.fileName, augmentedImageBitmap)
+            else
+                augmentedImageDatabase.addImage(it.fileName, augmentedImageBitmap, it.width)
         }
         config.augmentedImageDatabase = augmentedImageDatabase
         return true

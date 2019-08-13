@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">ARUkraine</string>
+
+    <string name="cherkasy">Cherkasy</string>
+    <string name="chernihiv">Chernihiv</string>
+    <string name="chernivtsi">Chernivtsi</string>
+    <string name="crimea">Crimea</string>
+    <string name="dnipropetrovsk">Dnipropetrovsk</string>
+    <string name="donetsk">Donetsk</string>
+    <string name="ivanofrankivsk">Ivano-Frankivsk</string>
+    <string name="kharkiv">Kharkiv</string>
+    <string name="kherson">Kherson</string>
+    <string name="khmelnitskyi">Khmelnitskyi</string>
+    <string name="kirovograd">Kirovograd</string>
+    <string name="kyiv">Kyiv</string>
+    <string name="luhansk">Luhansk</string>
+    <string name="lviv">Lviv</string>
+    <string name="mykolaiv">Mykolaiv</string>
+    <string name="odessa">Odessa</string>
+    <string name="poltava">Poltava</string>
+    <string name="rivne">Rivne</string>
+    <string name="sumy">Sumy</string>
+    <string name="ternopil">Ternopil</string>
+    <string name="vinnytsa">Vinnytsa</string>
+    <string name="volyn">Volyn</string>
+    <string name="zakarpatia">Zakarpatia</string>
+    <string name="zaporizhia">Zaporizhia</string>
+    <string name="zhytomyr">Zhytomyr</string>
 </resources>

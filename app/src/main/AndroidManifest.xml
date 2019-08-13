@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.letit0or1.kawa.delpost.arukraine">
+          xmlns:tools="http://schemas.android.com/tools" package="com.letit0or1.kawa.sum1.arukraine">
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera.ar"/>
@@ -12,10 +12,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:screenOrientation="locked"
-            android:name=".Application"
+            android:name="com.letit0or1.kawa.sum1.arukraine.ui.Application"
             tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".activity.MainActivity">
+        <activity android:name="com.letit0or1.kawa.sum1.arukraine.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
