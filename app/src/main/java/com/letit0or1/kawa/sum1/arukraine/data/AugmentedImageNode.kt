@@ -68,7 +68,7 @@ class AugmentedImageNode(val context: Context, val transformationSystem: Transfo
     }
 
     companion object {
-        var SHIFT_VECTOR = Vector3(0f, 0f, 0f)
+        var SHIFT_VECTOR = Vector3(0.012f, 0f, 0f)
         var SCALE_VECTOR = Vector3(1f, 1f, 1f)
         const val TAG: String = "AugmentedImageNode"
         //resize to fit image
