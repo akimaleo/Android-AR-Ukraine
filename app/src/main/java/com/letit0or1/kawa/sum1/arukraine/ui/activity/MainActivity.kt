@@ -123,7 +123,10 @@ class MainActivity : AppCompatActivity() {
         uiNode.localScale = Vector3(0.1f, 0.1f, 0.1f)
 
         val solarControlsView = solarControlsRenderable!!.view
-        solarControlsView.obl_info_title.text = viewModel.getDataForOblast(oblast, this)
+
+        solarControlsView.obl_info_title.text = getString(oblast.stringRes)
+        solarControlsView.obl_info_desc.text = viewModel.getDataForOblast(oblast, this)
+//        solarControlsView.obl_info_population.text = oblast
         solarControlsView.closeView.setOnClickListener {
             uiNode.setParent(null)
         }
